@@ -1,0 +1,209 @@
+<html>
+<center>
+ <head>
+    <title>Zodiac Horoscope</title>
+    <script>
+      function fortune()
+      {
+
+           var month = document.getElementById('input1').value;
+           var day = document.getElementById('input2').value;
+
+           var invalid = document.getElementById('message').innerHTML = "Please enter a real date";
+
+           if (month < 1 || month > 12) {
+               alert(invalid);
+           }
+
+
+           //Aquarius Jan 20 Feb 18
+    if((month == 1 &&  (day >= 20 && day <= 31)) || (month == 2 && (day >= 1 && day <= 18)))
+         {
+           document.getElementById("message").innerHTML = "This sign is weirdest of the zodiac. Many Aquarians would probably take this as a compliment but they shouldn’t. They are detached and aloof and almost robotic when it comes to matters of the heart.";
+           document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-aquarius_medium.png?v=1517258109' width='200' length='200'>";
+         }  else {
+
+      if((month == 1 &&  (day > 31 || day < 1)) || (month == 2 && (day > 29 || day < 1))){
+             alert(invalid);
+           } }
+
+
+
+          //Pisces Feb 19  Mar 20
+   if((month == 2 &&  (day >= 19 && day <= 29)) || (month == 3 && (day >= 1 && day <= 20)))
+        {
+          document.getElementById("message").innerHTML = "This sign is the doormat of the zodiac. They attract the down and out’s and are suckers for anyone with a loser sign on their back. When the going gets tough they hit whatever can remove them from the mundane – drugs, alcohol, religion or food. ";
+          document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-pisces_medium.png?v=1517257307' width='200' length='200'>";
+        } else {
+
+     if(month == 3 && (day > 31 || day < 1)){
+            alert(invalid);
+          } }
+
+
+            //Aries Mar 21 - Apr 19
+   if((month == 3 &&  (day >= 21 && day <= 31)) || (month == 4 && (day >= 1  && day <= 19)))
+        {
+          document.getElementById("message").innerHTML = "You are an Aries, This sign is the most selfish of the zodiac. The ram is independent by nature and doesn’t give much of a hoot about anyone else…and why should they?";
+          document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-aries_1024x1024.png?v=1517850072' width='200' length='200'>";
+        } else {
+
+     if(month == 4 && (day > 30 || day < 1)){
+            alert(invalid);
+          } }
+
+
+            //Taurus 4/20  5/20
+   if((month == 4 &&  (day >= 20 && day <= 30)) || (month == 5 && (day >= 1  && day <= 20)))
+
+       {
+         document.getElementById("message").innerHTML = "Ah a Taurus, The Bull is the most stubborn of the zodiac. Once they set their mind on something there’s no turning back or turning them around or nitpicking them or prodding– even an inch. They’ll just keep plodding along until they get to where they want to go.";
+         document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-taurus_1024x1024.png?v=1517849684' width='200' length='200'>";
+       }  else {
+
+    if(month == 5 && (day > 31 || day < 1)){
+           alert(invalid);
+         } }
+
+
+           //Gemini 5/21  6/20
+  if((month == 5 &&  (day >= 21 && day <= 31)) || (month == 6 && (day >= 1  && day <= 20)))
+
+      {
+        document.getElementById("message").innerHTML = "You are a Gemini. This sign is the biggest gossip of the zodiac. Gemini is as nosy as Mrs Kravitz and they just can’t be trusted to keep a secret. They come across as a know-it-all but if someone were to dig just beneath the surface they’d discover that Gemini is only repeating the latest Twitter trends.";
+        document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-gemini_1024x1024.png?v=1517844742' width='200' length='200'>";
+      } else {
+
+   if(month == 6 && (day > 30 || day < 1)){
+          alert(invalid);
+        } }
+
+          //Cancer 6/21  7/22
+  if((month == 6 &&  (day >= 21 && day <= 30)) || (month == 7 && (day >= 1  && day <= 22)))
+
+     {
+       document.getElementById("message").innerHTML = "Your a cancer, This sign is the crabbiest of the zodiac. They’re famous for their moods which can last for days, weeks, months or even years. Cancer will hold a grudge which will continue through lifetimes.";
+       document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-cancer_1024x1024.png?v=1517625158' width='200' length='200'>";
+     }  else {
+
+  if(month == 7 && (day > 31 || day < 1)){
+         alert(invalid);
+       } }
+
+        //Leo 7/23  8/22
+  if((month == 7 &&  (day >= 23 && day <= 31)) || (month == 8 && (day >= 1  && day <= 22)))
+
+    {
+      document.getElementById("message").innerHTML = "Leo is the most bossy of the zodiac. They come across as confident and commanding when all eyes are on them but as soon as they’re not getting enough attention they’ll throw a hissy fit. The Lion is a limelight hog and their vanity is legend. ";
+      document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-cancer_1024x1024.png?v=1517625158' width='200' length='200'>";
+    } else {
+
+ if(month == 8 && (day > 31 || day < 1)){
+        alert(invalid);
+      } }
+
+        //Virgo 8/23 9/22
+  if((month == 8 &&  (day >= 23 && day <= 31)) || (month == 9 && (day >= 1  && day <= 22)))
+
+   {
+     document.getElementById("message").innerHTML = "This sign is the pettiest and most critical of the zodiac. They’re the epitome of a nag and drive others nuts with their constant nit-picking and fault finding. Virgo will notice and pay attention to things others find mundane and boring.";
+     document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-leo_medium.png?v=1517617612' width='200' length='200'>";
+   }  else {
+
+if(month == 9 && (day > 30 || day < 1)){
+       alert(invalid);
+     } }
+
+       //Libra 9/23 10/22
+  if((month == 9 &&  (day >= 23 && day <= 30)) || (month == 10 && (day >= 1  && day <= 22)))
+
+  {
+    document.getElementById("message").innerHTML = "Libra, This sign is the biggest liar of the zodiac – not intentionally but really just to spare someone’s feelings or make themselves look good. They don’t like to be confrontational so will stretch the truth when necessary.";
+    document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-virgo_medium.png?v=1517590104' width='200' length='200'>";
+  } else {
+
+if(month == 10 && (day > 31 || day < 1)){
+      alert(invalid);
+    } }
+
+      //Scorpio 10/23 11/21
+  if((month == 10 &&  (day >= 23 && day <= 31)) || (month == 11 && (day >= 1  && day <= 21)))
+
+  {
+   document.getElementById("message").innerHTML = "Not a Scorpio, This sign is the most despised of the zodiac…and no wonder! Scorpio is the sign of sex and if they’re not sleeping with their best friend’s lover then they’re plotting the moves for their next sexual conquest";
+   document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-scorpio_medium.png?v=1517441497' width='200' length='200'>";
+  } else {
+
+if(month == 11 && (day > 30 || day < 1)){
+      alert(invalid);
+    } }
+
+      //Sagittarius 11/22 12/21
+  if((month == 11 &&  (day >= 22 && day <= 30)) || (month == 12 && (day >= 1  && day <= 21)))
+
+  {
+   document.getElementById("message").innerHTML = "Your a sagittarius ,This sign is the boozer of the zodiac and their reputation for drinking and partying is the stuff urban legends are made of. It’s all about having a good time…period. Never one to shy away from social gatherings they know how to liven up even the dullest of business meetings, work parties or family get-togethers.";
+   document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-sagittarius_medium.png?v=1517414803' width='200' length='200'>";
+  } else {
+
+if(month == 12 && (day > 31 || day < 1)){
+      alert(invalid);
+    } }
+
+      //Capricorn 12/22 1/19
+  if((month == 12 &&  (day >= 22 && day <= 31)) || (month == 1 && (day >= 1  && day <= 19)))
+
+  {
+   document.getElementById("message").innerHTML = "This sign is the most boring of the zodiac. While the rest of us are out having a good time Capricorn is working overtime and counting every penny toward their first billion. Nothing wrong with hard work and a long term plan but they’re a pinchpenny and would strong-arm their grandmother out of a buck if they could.";
+   document.getElementById("symbol").innerHTML = "<img src='https://cdn.shopify.com/s/files/1/1325/0879/articles/headers-zodiac-sign-astrology-personality-positives-negatives-cheat-sheet-capricorn_medium.png?v=1517361013' width='200' length='200'>";
+  } else {
+
+   if(month == 1 && (day > 31 || day < 1)){
+          alert(invalid);
+    }   }
+
+    }
+
+    </script>
+
+    <style>
+
+     body {
+      background-image :url(https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg);
+       color: white;
+       font-size: 30px;
+       margin: 100px;
+       font-family: sans-serif;
+     }
+
+     #button1:hover{
+       background-color: purple;
+       color: Aquamarine;
+       border-radius: 5px;
+       border: 2px solid black;
+
+
+       }
+
+
+
+    </style>
+ </head>
+
+ <body>
+
+
+
+   <h2>Zodiac Horoscope</h2>
+   <h6>Enter your birthday for a brutaly honest response!</h6>
+   <input id="input1" type = "number" min="1" max="12" value = "month">
+   <input id="input2" type = "number" min="1" max="31" value = "day">
+   <p>Enter your DOB</p>
+   <input id="button1" type = "button" value = "See what your zodiac is like!" onclick = "fortune()">
+   <hr><br><br>
+   <span id = "symbol"></span>
+   <br>
+   <span id = "message"></span>
+ </body>
+</center>
+</html>
